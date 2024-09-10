@@ -1,3 +1,7 @@
+@php
+    $menu = config('menu');
+@endphp
+
 <header>
     <div class="container">
         <nav>
@@ -10,45 +14,12 @@
             </ul>
 
             <ul class="nav">
-                <li>
-                    <a href="{{ route('characters') }}" class="">characters</a>
-                </li>
 
-                <li>
-                    <a href="{{ route('comics') }}" class="">comics</a>
-                </li>
-
-                <li>
-                    <a href="{{ route('movies') }}" class="">movies</a>
-                </li>
-
-                <li>
-                    <a href="{{ route('tv') }}" class="">tv</a>
-                </li>
-
-                <li>
-                    <a href="{{ route('games') }}" class="">games</a>
-                </li>
-
-                <li>
-                    <a href="{{ route('collectibles') }}" class="">collectibles</a>
-                </li>
-
-                <li>
-                    <a href="{{ route('videos') }}" class="">videos</a>
-                </li>
-
-                <li>
-                    <a href="{{ route('fans') }}" class="">fans</a>
-                </li>
-
-                <li>
-                    <a href="{{ route('news') }}" class="">news</a>
-                </li>
-
-                <li>
-                    <a href="{{ route('shop') }}" class="">shop</a>
-                </li>
+                @foreach ($menu as $name)
+                    <li>
+                        <a href="{{ route($name) }}" class="">{{ $name }}</a>
+                    </li>
+                @endforeach
             </ul>
         </nav>
     </div>
