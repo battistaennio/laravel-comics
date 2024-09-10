@@ -1,0 +1,45 @@
+//stile cards container
+main {
+    background-color: #1c1c1c;
+    padding: 40px 0;
+    position: relative;
+
+    h2 {
+        color: white;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: $primary-color;
+        position: absolute;
+        top: -25px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+//stile card
+.comic-card {
+    width: calc(100% / 6 - 25px);
+    margin: 10px 0;
+
+    .img-container {
+        height: 200px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    h3 {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+}
