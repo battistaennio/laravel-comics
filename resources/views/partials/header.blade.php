@@ -11,43 +11,43 @@
 
             <ul class="nav">
                 <li>
-                    <a href="#" class="">characters</a>
+                    <a href="{{ route('characters') }}" class="">characters</a>
                 </li>
 
                 <li>
-                    <a href="#" class="">comics</a>
+                    <a href="{{ route('comics') }}" class="">comics</a>
                 </li>
 
                 <li>
-                    <a href="#" class="">movies</a>
+                    <a href="{{ route('movies') }}" class="">movies</a>
                 </li>
 
                 <li>
-                    <a href="#" class="">tv</a>
+                    <a href="{{ route('tv') }}" class="">tv</a>
                 </li>
 
                 <li>
-                    <a href="#" class="">games</a>
+                    <a href="{{ route('games') }}" class="">games</a>
                 </li>
 
                 <li>
-                    <a href="#" class="">collectibles</a>
+                    <a href="{{ route('collectibles') }}" class="">collectibles</a>
                 </li>
 
                 <li>
-                    <a href="#" class="">videos</a>
+                    <a href="{{ route('videos') }}" class="">videos</a>
                 </li>
 
                 <li>
-                    <a href="#" class="">fans</a>
+                    <a href="{{ route('fans') }}" class="">fans</a>
                 </li>
 
                 <li>
-                    <a href="#" class="">news</a>
+                    <a href="{{ route('news') }}" class="">news</a>
                 </li>
 
                 <li>
-                    <a href="#" class="">shop</a>
+                    <a href="{{ route('shop') }}" class="">shop</a>
                 </li>
             </ul>
         </nav>
