@@ -11,9 +11,9 @@
                 @foreach ($comicsList as $comic)
                     <div class="comic-card">
                         <div class="img-container">
-                            <img src="{{ $comic['img-url'] }}" alt="{{ $comic['name'] }}">
+                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
                         </div>
-                        <h3> {{ $comic['name'] }} </h3>
+                        <h3> {{ $comic['series'] }} </h3>
                     </div>
                 @endforeach
 
